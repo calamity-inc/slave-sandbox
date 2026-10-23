@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get install -y python3 nodejs curl
+RUN apt-get install -y python3 nodejs php-cli \
+						curl
 RUN ln -s /usr/bin/python3 /usr/bin/python
